@@ -9,6 +9,8 @@ body {
     background-color: #f8fffe;
     color: #333;
     line-height: 1.6;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 .container {
@@ -25,12 +27,14 @@ header {
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align text */
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 header h1 {
@@ -177,15 +181,17 @@ nav a:hover {
 }
 
 /* Style for the footer with a linear gradient background */
+/* Style for the footer with a linear gradient background */
 footer {
     background: linear-gradient(to right, #5f2c82, #49a09d, #a2c7e5); /* Linear gradient background */
     padding: 10px 0;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: absolute; /* Fixed position to keep the footer at the bottom */
     bottom: 0;
     width: 100%;
 }
+
 
 
 /* Additional CSS for Login and Register Pages */
@@ -230,8 +236,9 @@ footer {
 .login-register .cta-button:hover {
     background-color: #e9190c;
 }
-/* Add this CSS to your existing stylesheet or in a new file styles.css */
 
+/* Add this CSS to your existing stylesheet or in a new file styles.css */
+/* Checkout Page Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8fffe;
@@ -326,3 +333,48 @@ footer {
     background-color: #fff;
 }
 
+/* Additional styles specific to the checkout page */
+.checkout-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+.checkout-item p {
+    margin: 0;
+}
+
+.subtotal {
+    font-weight: bold;
+}
+
+.checkout-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #49a09d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #a2c7e5;
+}
